@@ -1,6 +1,6 @@
 package Shapes;
 
-public class Shape {
+public abstract class Shape {
 
     private int a;
     private int b;
@@ -18,9 +18,7 @@ public class Shape {
         return b;
     }
 
-    public int getPerimetr() {
-        return 0;
-    }
+    public abstract int getPerimetr();
 
     public void showPerimetr() {
         System.out.println("Perimeter = " + getPerimetr());
