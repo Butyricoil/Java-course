@@ -10,8 +10,12 @@ public class Triangle extends Shape{
         this.c = c;
     }
 
+    public int getC() {
+        return c;
+    }
+
     @Override
-    public int Perimeter() {
-        return super.Perimeter() + c;
+    public int getPerimetr() {
+        return getA() + getB() + getC();
     }
 }

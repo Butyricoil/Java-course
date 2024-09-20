@@ -10,8 +10,20 @@ public class Shape {
         this.b = b;
     }
 
-    public int Perimeter() {
-        return (a + b);
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public int getPerimetr() {
+        return 0;
+    }
+
+    public void showPerimetr() {
+        System.out.println("Perimeter = " + getPerimetr());
     }
 }
 
