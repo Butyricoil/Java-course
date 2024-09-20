@@ -1,3 +1,5 @@
+package Shapes;
+
 public class Box {
     private int length;
     private int width;
@@ -13,6 +15,10 @@ public class Box {
         this(another.length, another.width, another.height);
     }
 
+    public Box() {
+
+    }
+
     public void setValues(int length, int width, int height) {
 
         this.length = length;
@@ -22,6 +28,13 @@ public class Box {
 
     public void getValues(int length, int width, int height) {
         System.out.println("length = " + length + "width = " + width + "height = " + height);
+    }
+
+    public void showInfo() {
+        System.out.println("Box info:");
+        System.out.println("Length: " + length);
+        System.out.println("Width: " + width);
+        System.out.println("Height: " + height);
     }
 
     public double volume() {
