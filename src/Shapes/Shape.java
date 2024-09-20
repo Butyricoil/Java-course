@@ -10,17 +10,17 @@ public abstract class Shape {
         this.b = b;
     }
 
-    public int getA() {
+    public final int getA() {
         return a;
     }
 
-    public int getB() {
+    public final int getB() {
         return b;
     }
 
     public abstract int getPerimetr();
 
-    public void showPerimetr() {
+    public final void showPerimetr() {
         System.out.println("Perimeter = " + getPerimetr());
     }
 }
