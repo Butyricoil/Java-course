@@ -24,7 +24,6 @@ public class Main {
                 }
             }
         });
-        thread.start();
 
         Thread thread2 = new Thread(new Runnable() {
             @Override
@@ -42,7 +41,6 @@ public class Main {
                 }
             }
         });
-        thread2.start();
 
     }
 }
