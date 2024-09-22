@@ -11,20 +11,15 @@ public class Main {
         Bird bird = new Bird();
         Fish fish = new Fish();
 
-        ArrayList<Animal> animal = new ArrayList<Animal>();
-        animal.add(cat);
-        animal.add(dog);
-        animal.add(bird);
-        animal.add(fish);
+        ArrayList<AbleaToRun> animals = new ArrayList<>();
 
-        for (Animal animals : animal) {
-            animals.eat();
+        animals.add(cat);
+        animals.add(dog);
+//        animals.add(bird);
+//        animals.add(fish);
+
+        for (AbleaToRun animal : animals) {
+            animal.run();
         }
-
-        Animal animal = new Dog();
-        animal.eat();
-        Dog dog = (Dog) animal;
-        ((Dog) animal).run();
-
     }
 }

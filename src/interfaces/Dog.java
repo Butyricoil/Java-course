@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements AbleaToRun {
 
     @Override
     public void eat() {
