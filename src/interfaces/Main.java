@@ -12,12 +12,17 @@ public class Main {
         Fish fish = new Fish();
 
         ArrayList<AbleaToRun> animals = new ArrayList<>();
+        AbleToFly ableToFly = new Bird();
+
+
 
         animals.add(cat);
         animals.add(dog);
-//        animals.add(bird);
+        animals.add(bird);
 //        animals.add(fish);
-
+        System.out.println("\n");
+        ableToFly.fly();
+        System.out.println("\n");
         for (AbleaToRun animal : animals) {
             animal.run();
         }
