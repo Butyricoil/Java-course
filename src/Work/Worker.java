@@ -1,6 +1,6 @@
 package Work;
 
-public interface Work {
+public interface Worker {
 
     void work();
 }

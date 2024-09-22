@@ -6,30 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ChiefCook chifCook = new ChiefCook();
-        Director director = new Director();
-        Programmer programmer = new Programmer();
+        String dish = "\"Фунчоза\"";
 
-        ArrayList<Work> workList = new ArrayList<>();
-        ArrayList<Driver> drivers = new ArrayList<>();
-
-        workList.add(chifCook);
-        workList.add(director);
-        workList.add(programmer);
-
-        drivers.add(programmer);
-        drivers.add(chifCook);
-
-        System.out.println("================================================================");
-        for (Work w : workList) {
-            w.work();
-        }
-        System.out.println("================================================================");
-        System.out.println("----------------------------------------------------------------");
-
-        for(Driver d : drivers) {
-            d.drive();
-        }
-        System.out.println("----------------------------------------------------------------");
+        Client client = new Client();
+        client.makeOrder(new Waiter() {
+            @Override
+            public void bringOrder(String dishName) {
+                System.out.println("Важе юлюдо: " + dishName);
+            }
+        }, dish);
     }
 }

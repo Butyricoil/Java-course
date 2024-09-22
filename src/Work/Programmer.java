@@ -1,6 +1,6 @@
 package Work;
 
-public class Programmer implements Work, Driver {
+public class Programmer implements Worker, Driver {
     @Override
     public void work() {
         System.out.println("Программист пишет код");
